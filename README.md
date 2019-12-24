@@ -6,14 +6,21 @@ SVD minimizes the size of an image in bytes to an acceptable level of quality. T
 | -------------  |
 |![ButterFly](https://user-images.githubusercontent.com/54346057/71386585-da040f80-25bc-11ea-87ba-5b8f86014e67.JPG)|
 
+*Splittig image by color and assigning to a variable*
 ```{r}
-Splittig image by color and assigning to a variable
-
 red <- matrix(image@red, nrow = image@size[1], ncol = image@size[2])
 green <- matrix(image@green, nrow = image@size[1], ncol = image@size[2])
 blue <- matrix(image@blue, nrow = image@size[1], ncol = image@size[2])
 ```
 
+
+*By applying SVD to red matrix, it yields one diagonal and two orthogonal matrices*
+```{r}
+red_svd <- svd(red)
+d <- red_svd$d  
+u <- red_svd$u
+v <- red_svd$v
+```
 
 
 
