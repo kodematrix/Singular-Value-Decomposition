@@ -2,8 +2,9 @@
 SVD minimizes the size of an image in bytes to an acceptable level of quality. This means that you are able to store more images in the same disk space as compared to before. Image compression takes advantage of the fact that only a few of the singular values obtained after SVD are large. You can trim the three matrices based on the first few singular values and obtain a compressed approximation of the original image. Some of the compressed images are nearly indistinguishable from the original by the human eye.
 
 *Let's take an RGB image of a butterfly to perform Singular Value Decomposition*
+
 | Matrix Image |
-| -------------  |
+| ------------- |
 |![ButterFly](https://user-images.githubusercontent.com/54346057/71386585-da040f80-25bc-11ea-87ba-5b8f86014e67.JPG)|
 
 *Splittig image by color and assigning to a variable*
